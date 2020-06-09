@@ -4,6 +4,7 @@
  * title:
  * e-mail:supericesun@gmail.com
  */
+
 const displayResolution = window.devicePixelRatio;
 let Application = PIXI.Application,
   loader = PIXI.loader,
@@ -44,7 +45,7 @@ let game = {
       this.setStore('uuid', uuid);
     }
     this.uuid = uuid;
-    this.request({action: 'ssin'});
+    this.request({action: 'ssin'}); // 进入游戏页面
     this.main();
     this.preload();
   },
@@ -72,8 +73,9 @@ let game = {
     return window.localStorage.getItem(name)
   },
 
-  // 埋点上报发送请求 // action: visitor
+  // 埋点上报发送请求
   request(data) {
+    return; // 埋点上报，公开版本注释
     let url = 'http://ashita.top/xxx';
     data.uuid = this.uuid;
 
@@ -671,7 +673,7 @@ let scene2 = {
             ball.life--;
             if (isSun) {
               changeAlpha(ball, .86);
-              scene2.loading - iconsetTips('不要射我啦，我是真太阳');
+              scene2.setTips('不要射我啦，我是真太阳');
             } else {
               changeAlpha(ball.children[1], .1);
               scene2.setTips('射中一个假太阳');
@@ -1162,7 +1164,7 @@ let scene3 = {
           box.visible = false;
           scene2.start();
           game.cb.scene3Out = null;
-          game.request({action: 'ssaga', times: ++game.again});
+          game.request({action: 'ssaga', times: ++game.again}); // 再玩一次
         }
       };
     });
@@ -1215,7 +1217,7 @@ let scene3 = {
       hit: info.hit,
       flag: isSunOver ? 0 : 1
     };
-    game.request(data);
+    game.request(data);    // 游戏结果
   },
 };
 
