@@ -9,8 +9,8 @@ PixiJS做的一款射箭类小游戏；
 不管真假，每个太阳射中之后，透明度会降低；假太阳会露出底下的真实面目，真太阳只能看到透明度变化；
 
 ## 体验地址和效果
-![二维码](./temp/qr-code.png)
-![图片](./temp/shoot-sun.gif)
+![二维码](https://sun2dan.github.io/shoot-sun/temp/qr-code.png)
+![图片](https://sun2dan.github.io/shoot-sun/temp/shoot-sun.gif)
 
 ## 素材和动态效果
 做游戏素材还是比较难找的，游戏里的素材都是我自己找的，稍微处理了一下；如有侵权，请联系我删除，邮箱 supericesun@gmail.com；
