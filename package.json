@@ -1,0 +1,30 @@
+{
+  "name": "gulp-install",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-foreach": "^0.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-wrapper": "^1.0.0"
+  },
+  "dependencies": {},
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "browserslist": [
+    "> 0.25%, not dead"
+  ]
+}
